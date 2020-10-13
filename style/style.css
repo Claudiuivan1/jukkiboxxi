@@ -1,0 +1,128 @@
+.alert-message {
+    width: 360px; 
+    height: 200px; 
+    font-size: 30px; 
+    font-family: 'VintageStraps'; 
+    position: absolute; 
+    left: calc(50% - 180px); 
+    top: calc(50vh - 100px);
+}
+
+.audio-button {
+    background-color:#317499; 
+    border-radius: 50%; 
+    background-size: 20px 20px; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    height: 40px; 
+    width: 40px;
+    margin-right: 10px;
+    margin: 0 auto;
+}
+
+.audio-button:hover {
+    background-color: #48A4D6;
+    cursor: pointer;
+}
+
+body {
+    min-height: 100vh;
+    background: -webkit-linear-gradient(top, #252a2e 0%,#51585e 100%);
+}
+
+.lateral-button {
+    background-color:#dc3545; 
+    border-radius: 50%; 
+    background-size: 20px 20px; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    height: 40px; 
+    width: 40px;
+    margin-right: 10px;
+    margin: 0 auto;
+}
+
+.lateral-button:hover {
+    background-color: #ba1323;
+    cursor: pointer;
+}
+
+.btn-login {
+    z-index: 10000; 
+    position: fixed; 
+    top: 20px; 
+    right: 0; 
+    cursor: pointer;
+}
+
+.btn-login:hover {
+    text-decoration: none;
+}
+
+.btn-registration {
+    display: block; 
+    position: fixed; 
+    top: 80px; 
+    right: 0; 
+    z-index: 10000;
+}
+
+.btn-registration:hover {
+    text-decoration: none;
+}
+
+.cover {
+    margin: 0 auto;
+}
+
+#cover-box {
+    position: relative; 
+    margin: 0 auto; 
+    overflow: hidden; 
+    max-height: 200px; 
+    height: 200px;
+}
+
+.cover-box {
+    width: 160px; 
+    height: 160px; 
+    position: absolute; 
+    top: calc(50% - 80px);
+    transition: left 0.5s ease;
+    border: 1px solid #DADADA;
+}
+
+.cover-box-next {
+    left: calc(100% + 130px);
+}
+
+.cover-box-prev {
+    left: -290px;
+}
+
+.list-group a {
+    cursor: pointer !important;
+}
+
+/*#main_song {
+    overflow: hidden;
+    max-height: 48px;
+    line-height: 48px;
+    padding: 0 12px 0 12px;
+}*/
+
+.reg_body::after {
+    background-image: url('../img/jukebox_vect.svg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 200% -40%;
+    background-size: 130% 130%;
+    opacity: 0.15;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}

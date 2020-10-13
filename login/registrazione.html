@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JUKKIBOXXI - REGISTRAZIONE</title>
+        <link rel="icon" href="../img/favicon.png">
+
+        <link rel="stylesheet" type="text/css" href="../style/reset.css">
+        <link rel="stylesheet" type="text/css" href="../style/fonts.css">
+        <link rel="stylesheet" type="text/css" href="../style/style.css">
+        <link rel="stylesheet" type="text/css" href="../dist/css/bootstrap.min.css">
+    </head>
+    <body class="bg-dark reg_body">
+        <h1 class="text-warning py-4 mt-5 text-center" style="font-family: 'VintageStraps';">Registrazione</h1>
+
+        <!-- Form inserimento dati -->
+        <div class="container-fluid pt-3">
+            <form name="registrazione" action="./registrazione.php" method="POST" onsubmit="return validateForm();">
+                <div class="row pt-3">
+                    <div class="col"></div>
+                    <div class="col">
+                        <input type="text" name="nome" id="nome" class="form-control" placeholder="Nome" maxlength="20" required
+                        onfocusout="return hideInvalid(this.id);">
+                    </div>
+                    <div class="col">
+                        <small id = "nomeInvalid" class="form-text text-danger" hidden>
+                            Devi inserire un nome valido
+                        </small>
+                    </div>
+                </div>
+                <div class="row pt-3">
+                    <div class="col"></div>
+                    <div class="col">
+                        <input type="text" name="cognome" id="cognome" class="form-control" placeholder="Cognome" maxlength="20" required
+                        onfocusout="return hideInvalid(this.id);">
+                    </div>
+                    <div class="col">
+                        <small id = "cognomeInvalid" class="form-text text-danger" hidden>
+                            Devi inserire un cognome valido
+                        </small>
+                    </div>
+                </div>
+                <div class="row pt-3">
+                    <div class="col"></div>
+                    <div class="col">
+                        <input type="number" name="eta" id="eta" class="form-control" placeholder="Età" min="16" max="120" maxlength="3" required
+                        onfocusout="return hideInvalid(this.id);">
+                    </div>
+                    <div class="col">
+                        <small id = "etaInvalid" class="form-text text-danger" hidden>
+                            Devi avere più di 16 anni
+                        </small>
+                    </div>
+                </div>
+                <div class="row pt-3">
+                    <div class="col"></div>
+                    <div class="col">
+                        <input type="email" name="email" id="email" class="form-control" placeholder="Email" maxlength="30" required
+                        onfocusout="return hideInvalid(this.id);">
+                    </div>
+                    <div class="col">
+                        <small id = "emailInvalid" class="form-text text-danger" hidden>
+                            L'email inserita non è valida
+                        </small>
+                    </div>
+                </div>
+                <div class="row pt-3">
+                    <div class="col"></div>
+                    <div class="col">
+                        <input type="text" name="user" id="user" class="form-control" placeholder="Username" maxlength="20" required
+                        onfocusout="return hideInvalid(this.id);">
+                    </div>
+                    <div class="col">
+                        <small id = "userInvalid" class="form-text text-danger" hidden>
+                            Username non valido (Almeno 4 caratteri. Primo carattere non numerico)
+                        </small>
+                    </div>
+                </div>
+                <div class="row pt-3">
+                    <div class="col"></div>
+                    <div class="col">
+                        <input type="password" name="password" id="password" class="form-control" placeholder="Password" maxlength="32" required
+                        onfocusout="return hideInvalid(this.id);">
+                    </div>
+                    <div class="col">
+                        <small id="passwordInvalid" class="form-text text-danger" hidden>
+                            La password deve essere lunga dagli 8 ai 32 caratteri e contenere almeno una lettera maiuscola, una minuscola e un numero
+                        </small>
+                    </div>
+                </div>
+                <div class="row pt-3">
+                    <div class="col"></div>
+                    <div class="col">
+                        <input type="password" name="cpassword" id="cpassword" class="form-control" placeholder="Conferma password" maxlength="32" required
+                        onfocusout="return hideInvalid(this.id);">
+                    </div>
+                    <div class="col">
+                        <small id = "cpasswordInvalid" class="form-text text-danger" hidden>
+                            Le due password non coincidono
+                        </small>
+                    </div>
+                </div>
+                <div class="row pt-3">
+                    <div class="col-4"></div>
+                    <div class="col-2">
+                        <!-- Tasto submit -->
+                        <input type="submit" class="btn btn-outline-primary w-100" value="Invia">
+                    </div>
+                    <div class="col-2">
+                        <!--Tasto reset -->
+                        <input type="reset" class="btn btn-outline-light w-100" value="Reset">
+                    </div>
+                    <div class="col-4"></div>
+                </div>
+                <div class="row pt-3">
+                    <div class="col text-center">
+                        <!-- Link di ritorno alla home -->
+                        <a class="nav-link active" href="../index.php"> &#10094 Torna alla home</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <script src="../dist/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="../dist/js/bootstrap.min.js"></script>
+        <script src="../functiones/controls.js"></script>
+    </body>
+</html>
