@@ -11,15 +11,15 @@
         <link rel="stylesheet" type="text/css" href="../style/style.css">
 		<link rel="stylesheet" type="text/css" href="../dist/css/bootstrap.min.css">
 
-		<script src="../functiones/globals.js"></script>
-		<script src="../functiones/profilo.js"></script>
-		<script src="../functiones/controls.js"></script>
-		<script src="../functiones/tracks.js"></script>
+		<script src="../functions/globals.js"></script>
+		<script src="../functions/profilo.js"></script>
+		<script src="../functions/controls.js"></script>
+		<script src="../functions/tracks.js"></script>
     </head>
     <body onload="return initTopFive();">
 		<?php 
-			include '../functiones/global_functions.php';
-			include '../functiones/db_functions.php';
+			include '../functions/global_functions.php';
+			include '../functions/db_functions.php';
 		?>
 		<?php $logged = is_logged(); ?>
 		<!-- La pagina è raggiungibile solo loggandosi ergo non effettuo controlli -->

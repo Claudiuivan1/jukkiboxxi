@@ -15,8 +15,8 @@
         <?php
     
             // Includo le funzioni PHP
-            include '../functiones/global_functions.php';
-            include '../functiones/db_functions.php';
+            include '../functions/global_functions.php';
+            include '../functions/db_functions.php';
 
             // Preparo i dati
             $nome = $_POST["nome"];

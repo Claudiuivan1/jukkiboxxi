@@ -15,8 +15,8 @@
         <div class="alert alert-success px-3 pt-5 text-center alert-message">
             <?php
                 // Includo le funzioni PHP
-                include '../functiones/global_functions.php';
-                include '../functiones/db_functions.php';
+                include '../functions/global_functions.php';
+                include '../functions/db_functions.php';
 
                 //Estraggo la nuova password
                 $password = encrypt_password($_POST["npassword"]);

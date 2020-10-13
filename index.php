@@ -11,16 +11,16 @@
         <link rel="stylesheet" type="text/css" href="./style/style.css">
 		<link rel="stylesheet" type="text/css" href="./dist/css/bootstrap.min.css">
 
-		<script src="./functiones/globals.js"></script>
-		<script src="./functiones/controls.js"></script>
-		<script src="./functiones/animations.js"></script>
-		<script src="./functiones/tracks.js"></script>
-		<script src="./functiones/buttons.js"></script>
+		<script src="./functions/globals.js"></script>
+		<script src="./functions/controls.js"></script>
+		<script src="./functions/animations.js"></script>
+		<script src="./functions/tracks.js"></script>
+		<script src="./functions/buttons.js"></script>
     </head>
     <body>
 		<?php 
-			include './functiones/global_functions.php';
-			include './functiones/db_functions.php';
+			include './functions/global_functions.php';
+			include './functions/db_functions.php';
 		?>
 		<?php $logged = is_logged(); ?>
 

@@ -16,8 +16,8 @@
             <?php
 
                 // Includo le funzioni PHP
-                include '../functiones/global_functions.php';
-                include '../functiones/db_functions.php';
+                include '../functions/global_functions.php';
+                include '../functions/db_functions.php';
 
                 // Verifico che l'utente che prova ad effettuare il logout sia effettivamente loggato
                 $logged = is_logged();
